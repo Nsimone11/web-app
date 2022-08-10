@@ -8,8 +8,8 @@ import TableRow from '@mui/material/TableRow';
 import Title from './Title';
 
 // Generate Order Data
-function createData(id, date, name, shipTo, ) {
-  return { id, date, name, shipTo,  };
+function createData( name ) {
+  return { name  };
 }
 
 const rows = [
@@ -49,11 +49,11 @@ function preventDefault(event) {
   event.preventDefault();
 }
 
-export default function Orders() {
-  return (
-    <React.Fragment>
-      <Title>Recent Posts</Title>
-      <Table size="small">
+// export default function Orders() {
+//   return (
+//     <React.Fragment>
+//       <Title>Recent Posts</Title>
+      {/* <Table size="small">
         <TableHead>
           <TableRow>
             <TableCell>Date</TableCell>
@@ -72,10 +72,10 @@ export default function Orders() {
             </TableRow>
           ))}
         </TableBody>
-      </Table>
-      <Link color="primary" href="#" onClick={preventDefault} sx={{ mt: 3 }}>
+      </Table> */}
+      {/* <Link color="primary" href="#" onClick={preventDefault} sx={{ mt: 3 }}>
         See more orders
-      </Link>
-    </React.Fragment>
-  );
-}
+      </Link> */}
+//     </React.Fragment>
+//   );
+// }

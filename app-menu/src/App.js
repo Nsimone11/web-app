@@ -2,8 +2,8 @@ import './App.css';
 import Chart from './components/Chart';
 import Dashboard from './components/Dashboard';
 import Deposits from './components/Deposits';
-import listItems from './components/listItems';
-import Orders from './components/Orders';
+import listItems from './components/ListItems';
+// import Orders from './components/Orders';
 import Title from './components/Title';
 
 function App() {
@@ -13,8 +13,10 @@ function App() {
       <Dashboard></Dashboard>
       <Deposits></Deposits>
       <listItems></listItems>
-      <Orders></Orders>
+      {/* <Orders></Orders> */}
       <Title></Title>
+
+
 
     </div>
   );

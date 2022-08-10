@@ -17,10 +17,10 @@ import Link from '@mui/material/Link';
 import MenuIcon from '@mui/icons-material/Menu';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import NotificationsIcon from '@mui/icons-material/Notifications';
-import { mainListItems } from './listItems';
+import { mainListItems } from './ListItems';
 import Chart from './Chart';
 import Deposits from './Deposits';
-import Orders from './Orders';
+// import Orders from './Orders';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
@@ -29,7 +29,16 @@ import OndemandVideoIcon from '@mui/icons-material/OndemandVideo';
 import StorefrontIcon from '@mui/icons-material/Storefront';
 import ViewInArIcon from '@mui/icons-material/ViewInAr';
 import PostAddIcon from '@mui/icons-material/PostAdd';
-import PortraitIcon from '@mui/icons-material/Portrait';
+import EmailIcon from '@mui/icons-material/Email';
+import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import LensIcon from '@mui/icons-material/Lens';
+import SearchIcon from '@mui/icons-material/Search';
+import Avatar from '@mui/material/Avatar';
+import Stack from '@mui/material/Stack';
+import { deepOrange, deepPurple } from '@mui/material/colors';
+import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
+import CommentIcon from '@mui/icons-material/Comment';
+import SendIcon from '@mui/icons-material/Send';
 
 function Copyright(props) {
   return (
@@ -89,7 +98,6 @@ const Drawer = styled(MuiDrawer, { shouldForwardProp: (prop) => prop !== 'open' 
     },
   }),
 );
-
 const mdTheme = createTheme();
 
 function DashboardContent() {
@@ -126,62 +134,63 @@ function DashboardContent() {
               color="inherit"
               noWrap
               sx={{ flexGrow: 1 }}
+
             >
-              <React.Fragment>
-              <ListItemButton>
-      <ListItemIcon>
-        <HomeIcon />
-      </ListItemIcon>
-      <ListItemText primary="" />
-    </ListItemButton>
-  </React.Fragment>
+             
+             
+<Grid align="left">
+            
+    <IconButton color="inherit">
+    <Stack direction="row" spacing={1}>
+      <Avatar sx={{ bgcolor: deepOrange[500] }}>CD</Avatar>
+    </Stack>
+</IconButton>
+
+            <IconButton color="inherit">
+                <SearchIcon />
+            </IconButton>
+</Grid>
+
+<Grid align="center">            
+<IconButton color="inherit">
+                <HomeIcon />
+            </IconButton>
               
-  <React.Fragment>
-              <ListItemButton>
-      <ListItemIcon>
-        <OndemandVideoIcon />
-      </ListItemIcon>
-      <ListItemText primary="" />
-    </ListItemButton>
-  </React.Fragment>
+            <IconButton color="inherit">
+                <OndemandVideoIcon />
+            </IconButton>  
 
-  <React.Fragment>
-              <ListItemButton>
-      <ListItemIcon>
-        <StorefrontIcon />
-      </ListItemIcon>
-      <ListItemText primary="" />
-    </ListItemButton>
-  </React.Fragment>
+            <IconButton color="inherit">
+                <StorefrontIcon />
+            </IconButton>    
 
-  <React.Fragment>
-              <ListItemButton>
-      <ListItemIcon>
-        <ViewInArIcon />
-      </ListItemIcon>
-      <ListItemText primary="" />
-    </ListItemButton>
-  </React.Fragment>
+            <IconButton color="inherit">
+                <ViewInArIcon />
+            </IconButton> 
 
-  <React.Fragment>
-              <ListItemButton>
-      <ListItemIcon>
-        <PostAddIcon />
-      </ListItemIcon>
-      <ListItemText primary="" />
-    </ListItemButton>
-  </React.Fragment>
-</Typography>
+            <IconButton color="inherit">
+                <PostAddIcon />
+            </IconButton>
+            
+</Grid>  
+
+ </Typography>
+            
+ <IconButton color="inherit">
+              <Badge badgeContent={100} color="secondary">
+                <EmailIcon />
+              </Badge>
+            </IconButton>
             
             <IconButton color="inherit">
-              <Badge badgeContent={99} color="secondary">
+              <Badge badgeContent={86} color="secondary">
                 <NotificationsIcon />
               </Badge>
             </IconButton>
 
             <IconButton color="inherit">
-              <Badge badgeContent={""} color="secondary">
-                <PortraitIcon />
+              <Badge badgeContent={"3"} color="secondary">
+                <AccountCircleIcon />
               </Badge>
             </IconButton>
 
@@ -228,12 +237,41 @@ function DashboardContent() {
                     p: 2,
                     display: 'flex',
                     flexDirection: 'column',
-                    height: 240,
+                    height: 500,
                   }}
                 >
-                  <Chart />
+                  {/* <Chart /> */}
+                  
+                  <Grid align="center">
+                
+                  <img src="https://images.unsplash.com/photo-1527556897832-0c6492fa56cd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGJlYWNoJTIwc3Vuc2V0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60" height="350" width="350"></img> 
+              
+              <Grid align="center">
+               <IconButton color="inherit">
+              <Badge badgeContent={"21"} color="secondary">
+                <FavoriteBorderIcon />
+              </Badge>
+            </IconButton>
+
+            <IconButton color="inherit">
+              <Badge badgeContent={"10"} color="secondary">
+                <CommentIcon />
+              </Badge>
+            </IconButton>
+
+            <IconButton color="inherit">             
+                <SendIcon />
+            </IconButton>
+
+</Grid>
+
+               </Grid>
+               <h6>Loved my trip to Florida! Can't wait to go again. - Code Differently, 30 min ago</h6>
                 </Paper>
               </Grid>
+
+              
+              
               {/* Recent Deposits */}
               <Grid item xs={12} md={4} lg={3}>
                 <Paper
@@ -248,11 +286,11 @@ function DashboardContent() {
                 </Paper>
               </Grid>
               {/* Recent Orders */}
-              <Grid item xs={12}>
+              {/* <Grid item xs={12}>
                 <Paper sx={{ p: 2, display: 'flex', flexDirection: 'column' }}>
                   <Orders />
                 </Paper>
-              </Grid>
+              </Grid> */}
             </Grid>
             <Copyright sx={{ pt: 4 }} />
           </Container>

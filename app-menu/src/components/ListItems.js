@@ -10,6 +10,7 @@ import FeedIcon from '@mui/icons-material/Feed';
 import StorefrontIcon from '@mui/icons-material/Storefront';
 import SettingsIcon from '@mui/icons-material/Settings';
 import ModeNightIcon from '@mui/icons-material/ModeNight';
+import ToggleOffIcon from '@mui/icons-material/ToggleOff';
 
 export const mainListItems = (
   <React.Fragment>
@@ -58,6 +59,7 @@ export const mainListItems = (
     <ListItemButton>
       <ListItemIcon>
         <ModeNightIcon />
+        <ToggleOffIcon />
       </ListItemIcon>
       <ListItemText primary="" />
     </ListItemButton>
