@@ -237,7 +237,7 @@ function DashboardContent() {
                     p: 2,
                     display: 'flex',
                     flexDirection: 'column',
-                    height: 500,
+                    height: 1500,
                   }}
                 >
                   {/* <Chart /> */}
@@ -267,10 +267,70 @@ function DashboardContent() {
 
                </Grid>
                <h6>Loved my trip to Florida! Can't wait to go again. - Code Differently, 30 min ago</h6>
+               
+
+              <Grid align="center">
+                
+                  <img src="https://images.unsplash.com/photo-1621046590998-78ecf71d58a8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fHRyYW1wb2xpbmV8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60" height="350" width="350"></img> 
+              
+              <Grid align="center">
+               <IconButton color="inherit">
+              <Badge badgeContent={"100"} color="secondary">
+                <FavoriteBorderIcon />
+              </Badge>
+            </IconButton>
+
+            <IconButton color="inherit">
+              <Badge badgeContent={"16"} color="secondary">
+                <CommentIcon />
+              </Badge>
+            </IconButton>
+
+            <IconButton color="inherit">             
+                <SendIcon />
+            </IconButton>
+
+</Grid>
+
+               </Grid>
+               <h6>I got my backhandspring yesterday!!! Back flip, here I come! - Nina-Simone P., 12 hours ago</h6>
+               
+               <Grid align="center">
+                
+                  <img src="https://images.unsplash.com/photo-1610562275255-03b7fa0d4655?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGNvb2tpZXN8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60" height="350" width="350"></img> 
+              
+              <Grid align="center">
+               <IconButton color="inherit">
+              <Badge badgeContent={"100"} color="secondary">
+                <FavoriteBorderIcon />
+              </Badge>
+            </IconButton>
+
+            <IconButton color="inherit">
+              <Badge badgeContent={"72"} color="secondary">
+                <CommentIcon />
+              </Badge>
+            </IconButton>
+
+            <IconButton color="inherit">             
+                <SendIcon />
+            </IconButton>
+
+</Grid>
+
+               </Grid>
+               <h6>Christmas in July cookies, 2 for $5, Santa Claus, 12 days ago</h6>
+               
+               
+               
+               
                 </Paper>
               </Grid>
 
-              
+            
+
+
+
               
               {/* Recent Deposits */}
               <Grid item xs={12} md={4} lg={3}>
@@ -279,7 +339,7 @@ function DashboardContent() {
                     p: 2,
                     display: 'flex',
                     flexDirection: 'column',
-                    height: 240,
+                    height: 425,
                   }}
                 >
                   <Deposits />
